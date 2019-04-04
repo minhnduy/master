@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8AD599A-5FD3-4C2F-AA68-8E789870BC0B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLBH</RootNamespace>
+    <AssemblyName>QLBH</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.2.UI, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Export, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2.UI, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.2.Extensions, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.2.Wizard, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.2.Extensions, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\test\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helper\HashString.cs" />
+    <Compile Include="LOGIC\CHAMCONG.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LOGIC\CHAMCONG.Designer.cs">
+      <DependentUpon>CHAMCONG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIC\CHITIETHANGTON.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LOGIC\CHITIETHANGTON.Designer.cs">
+      <DependentUpon>CHITIETHANGTON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIC\DanhThu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LOGIC\DanhThu.Designer.cs">
+      <DependentUpon>DanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIC\InChamCOng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIC\InChamCOng.Designer.cs">
+      <DependentUpon>InChamCOng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIC\InChiTietHangTon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIC\InChiTietHangTon.Designer.cs">
+      <DependentUpon>InChiTietHangTon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIC\InTonKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIC\InTonKho.Designer.cs">
+      <DependentUpon>InTonKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIC\TONHANG.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LOGIC\TONHANG.Designer.cs">
+      <DependentUpon>TONHANG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODEL\CONG_NO.cs" />
+    <Compile Include="MODEL\DataProvider.cs" />
+    <Compile Include="MODEL\DM_HANG.cs" />
+    <Compile Include="MODEL\DOI_TAC.cs" />
+    <Compile Include="MODEL\QLBHDbContext.cs" />
+    <Compile Include="MODEL\NGHI_PHEP.cs" />
+    <Compile Include="MODEL\NHAN_VIEN.cs" />
+    <Compile Include="MODEL\PHIEU_BH.cs" />
+    <Compile Include="MODEL\PHIEU_BH_CT.cs" />
+    <Compile Include="MODEL\PHIEU_MH.cs" />
+    <Compile Include="MODEL\PHIEU_MH_CT.cs" />
+    <Compile Include="MODEL\User.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VIEW\AddhangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\AddhangHoa.Designer.cs">
+      <DependentUpon>AddhangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\AddPhieuBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\AddPhieuBan.Designer.cs">
+      <DependentUpon>AddPhieuBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\AddPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\AddPhieuNhap.Designer.cs">
+      <DependentUpon>AddPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\AddSupplierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\AddSupplierForm.Designer.cs">
+      <DependentUpon>AddSupplierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\DSPhieuBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\DSPhieuBan.Designer.cs">
+      <DependentUpon>DSPhieuBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\DSPhieuNhapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\DSPhieuNhapForm.Designer.cs">
+      <DependentUpon>DSPhieuNhapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\ListHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\ListHangHoa.Designer.cs">
+      <DependentUpon>ListHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\ListSupplierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\ListSupplierForm.Designer.cs">
+      <DependentUpon>ListSupplierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\ListUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\ListUser.Designer.cs">
+      <DependentUpon>ListUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LOGIC\CHAMCONG.resx">
+      <DependentUpon>CHAMCONG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIC\CHITIETHANGTON.resx">
+      <DependentUpon>CHITIETHANGTON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIC\DanhThu.resx">
+      <DependentUpon>DanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIC\InChamCOng.resx">
+      <DependentUpon>InChamCOng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIC\InChiTietHangTon.resx">
+      <DependentUpon>InChiTietHangTon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIC\InTonKho.resx">
+      <DependentUpon>InTonKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIC\TONHANG.resx">
+      <DependentUpon>TONHANG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VIEW\AddhangHoa.resx">
+      <DependentUpon>AddhangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\AddPhieuBan.resx">
+      <DependentUpon>AddPhieuBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\AddPhieuNhap.resx">
+      <DependentUpon>AddPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\AddSupplierForm.resx">
+      <DependentUpon>AddSupplierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\DSPhieuBan.resx">
+      <DependentUpon>DSPhieuBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\DSPhieuNhapForm.resx">
+      <DependentUpon>DSPhieuNhapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\ListHangHoa.resx">
+      <DependentUpon>ListHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\ListSupplierForm.resx">
+      <DependentUpon>ListSupplierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\ListUser.resx">
+      <DependentUpon>ListUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
